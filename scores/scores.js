@@ -25,6 +25,14 @@ function printHighscores() {
     }
   
 }
+// clear the list of highscores when clicking the clear button
+function clearHighscores() {
+    window.localStorage.removeItem('highscores')
+    window.location.reload();
+}
+document.getElementById('clear').onclick = clearHighscores
+
+console.log(clearHighscores)
 
 printHighscores()
 //loop to retrieve and store highscores
