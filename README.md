@@ -22,7 +22,8 @@ THEN I can save my initials and my score
 On this webpage you should be able to take a short coding quiz with a starting timer of 1 minute. If you answer a question incorrectly your score will be reduced along with the amount of time
 you have available. If you are not able to finish the quiz you will recieve a zero for an incomplete assessment. If you want to view the scores that have been previously recorded you can click the view highscores link which will take you to a list of the scores recorded with the initials. There will be 5 questions to complete in this quiz. Good Luck!
 ## Visuals
-
+![Quiz-started](href=assets\Screenshot 2023-01-04 started quiz.png) 
+![highscore-list](href=assets\Screenshot 2023-01-04 141943.png)
 ## License
 MIT License
 
