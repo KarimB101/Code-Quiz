@@ -38,7 +38,8 @@ var questions = [
 var currentQuestionIndex = 0;
 var time = questions.length * 12; //5 questions needed for this setup
 var timerId;
-
+// console.log(time)
+// console.log(timerId)
 // DOM elements
 var questionsEl = document.getElementById('questions');
 var timerEl = document.getElementById('time');
@@ -47,6 +48,13 @@ var submitBtn = document.getElementById('submit');
 var startBtn = document.getElementById('start');
 var initialsEl = document.getElementById('initials');
 var feedbackEl = document.getElementById('feedback');
+console.log(feedbackEl)
+console.log(initialsEl)
+console.log(startBtn)
+console.log(submitBtn)
+console.log(choicesEl)
+console.log(timerEl)
+console.log(questionsEl)
 
 function startQuiz() {
     var startScreenEl1 = document.getElementById('start-screen')
@@ -85,7 +93,6 @@ function getQuestion() {
       choicesEl.appendChild(choiceNode);
     }
   }
-  
   function questionClick(event) {
     var buttonEl = event.target;
   
