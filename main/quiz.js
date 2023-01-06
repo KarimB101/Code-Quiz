@@ -95,7 +95,7 @@ function getQuestion() {
   }
   function questionClick(event) {
     var buttonEl = event.target;
-  
+  var answerChoice = $("#feedback")
     // if the clicked element is not a choice button, do nothing.
     if (!buttonEl.matches('.choice')) {
       return;
@@ -112,16 +112,17 @@ function getQuestion() {
       // display new time on page
     timerEl.textContent = time;
     feedbackEl.textContent = 'Wrong!';
+    answerChoice.style.color= "red"
   } else {
 
     feedbackEl.textContent = 'Correct!';
+    answerChoice.style.color= "green"
   }
-
   // flash right/wrong feedback on page for half a second
   feedbackEl.setAttribute('class', 'feedback');
   setTimeout(function () {
     feedbackEl.setAttribute('class', 'feedback hide');
-  }, 1000);
+  }, 5000);
 
   // move to next question
   currentQuestionIndex++;
