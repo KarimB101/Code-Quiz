@@ -89,13 +89,13 @@ function getQuestion() {
   
       choiceNode.textContent = i + 1 + '. ' + choice;
   
-      // display on the page
+      // display choices on the page
       choicesEl.appendChild(choiceNode);
     }
   }
   function questionClick(event) {
     var buttonEl = event.target;
-  var answerChoice = $("#feedback")
+  
     // if the clicked element is not a choice button, do nothing.
     if (!buttonEl.matches('.choice')) {
       return;
@@ -112,11 +112,11 @@ function getQuestion() {
       // display new time on page
     timerEl.textContent = time;
     feedbackEl.textContent = 'Wrong!';
-    answerChoice.style.color= "red"
+    feedbackEl.style.color = "red"
   } else {
 
     feedbackEl.textContent = 'Correct!';
-    answerChoice.style.color= "green"
+    feedbackEl.style.color= "green"
   }
   // flash right/wrong feedback on page for half a second
   feedbackEl.setAttribute('class', 'feedback');
